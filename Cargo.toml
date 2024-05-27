@@ -1,0 +1,27 @@
+[package]
+authors = ["Cristian Cobzarenco <cristi.cobzarenco@gmail.com>"]
+description = "A Doom Renderer/Level Viewer written in Rust."
+name = "rs_doom"
+version = "0.0.9"
+edition = "2021"
+
+[[bin]]
+name = "rs_doom"
+
+[dependencies]
+wad = { path = "wad" }
+engine = { path = "engine" }
+game = { path = "game" }
+math = { path = "math" }
+
+env_logger = "0.8.3"
+structopt = "0.3.21"
+failure = "0.1.8"
+
+[dependencies.log]
+features = ["release_max_level_info"]
+version = "0.4.8"
+
+[workspace]
+
+
